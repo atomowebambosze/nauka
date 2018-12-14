@@ -1,0 +1,24 @@
+score = input('Write a score between 0.0 and 1.0\n')
+error = 'Error, provide a score between provided range'
+
+try:
+  if float(score) >= 0.9 and float(score) <= 1.0:
+   print('A')
+  
+  elif float(score) >= 0.8 and float(score)<0.9:
+    print('B')
+  
+  elif float(score) >= 0.7 and float(score)<0.9:
+    print('C')
+  
+  elif float(score) >= 0.6 and float(score)<0.9:
+   print('D')
+  
+  elif float(score) < 0.6 and float(score)>0:
+   print('F')
+  
+  elif float(score) > 1.0 or float(score)<0:
+    print('The score is our of range, please type again.')
+    
+except:
+  print('Please enter a number.')

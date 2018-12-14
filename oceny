@@ -1,5 +1,4 @@
 score = input('Write a score between 0.0 and 1.0\n')
-error = 'Error, provide a score between provided range'
 
 try:
   if float(score) >= 0.9 and float(score) <= 1.0:

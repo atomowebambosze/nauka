@@ -1,0 +1,12 @@
+hours = input('How many hours did you work?\n')
+rate = input('How much do they pay you for one hour?\n')
+
+if float(hours) <= 40:
+  basic = (float(hours)*float(rate))
+  print ('Your salary is ' + str(basic) + '$')
+  
+elif float(hours) > 40:
+  over = (float(hours) - 40) * (float(rate)*1.5)
+  basic = (40*float(rate))
+  total = (over+basic)
+  print('Your salary is ' + str(total) + '$') 
